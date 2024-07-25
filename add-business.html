@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Business Profile - Business Information Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Add Business Profile</h1>
+        <nav>
+          <ul>
+            <li><a href="admin.html">Admin Dashboard</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="form-container">
+        <form id="add-business-form">
+          <label for="business-name">Business Name:</label>
+          <input type="text" id="business-name" name="business-name" required />
+
+          <label for="business-category">Category:</label>
+          <select id="business-category" name="business-category" required>
+            <!-- Categories will be dynamically added here -->
+          </select>
+
+          <label for="business-city">City:</label>
+          <select id="business-city" name="business-city" required>
+            <!-- Cities will be dynamically added here -->
+          </select>
+
+          <label for="business-address">Address:</label>
+          <input
+            type="text"
+            id="business-address"
+            name="business-address"
+            required
+          />
+
+          <label for="business-contact">Contact Information:</label>
+          <input
+            type="text"
+            id="business-contact"
+            name="business-contact"
+            required
+          />
+
+          <button type="submit">Add Business</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 Business Information Application. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

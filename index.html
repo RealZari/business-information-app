@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Information Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Business Information Application</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      style="
+        padding: 20px;
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      "
+    >
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: space-between;
+        "
+      >
+        <section
+          id="categories"
+          style="
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+            box-sizing: border-box;
+          "
+        >
+          <h2 style="font-size: 24px; color: #333333; margin-bottom: 15px">
+            Categories
+          </h2>
+          <ul
+            id="category-list"
+            style="list-style-type: none; padding: 0; margin: 0"
+          >
+            <!-- Categories will be dynamically added here -->
+            <li
+              style="
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin-bottom: 10px;
+                transition: background-color 0.3s, box-shadow 0.3s;
+              "
+              onmouseover="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+              onmouseout="this.style.backgroundColor='#ffffff'; this.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.1)';"
+            >
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  color: #007bff;
+                  font-size: 18px;
+                  display: block;
+                "
+                >Category Item</a
+              >
+            </li>
+            <!-- Add more categories as needed -->
+          </ul>
+        </section>
+
+        <section
+          id="businesses"
+          style="
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+            box-sizing: border-box;
+          "
+        >
+          <h2 style="font-size: 24px; color: #333333; margin-bottom: 15px">
+            Businesses
+          </h2>
+          <ul
+            id="business-list"
+            style="list-style-type: none; padding: 0; margin: 0"
+          >
+            <!-- Businesses will be dynamically added here -->
+            <li
+              style="
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin-bottom: 10px;
+                transition: background-color 0.3s, box-shadow 0.3s;
+              "
+              onmouseover="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+              onmouseout="this.style.backgroundColor='#ffffff'; this.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.1)';"
+            >
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  color: #007bff;
+                  font-size: 18px;
+                  display: block;
+                "
+                >Business Item</a
+              >
+            </li>
+            <!-- Add more businesses as needed -->
+          </ul>
+        </section>
+
+        <section
+          id="top-food"
+          style="
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+            box-sizing: border-box;
+          "
+        >
+          <h2 style="font-size: 24px; color: #333333; margin-bottom: 15px">
+            Top Food Businesses
+          </h2>
+          <ul
+            id="top-food-list"
+            style="list-style-type: none; padding: 0; margin: 0"
+          >
+            <!-- Top food businesses will be dynamically added here -->
+            <li
+              style="
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin-bottom: 10px;
+                transition: background-color 0.3s, box-shadow 0.3s;
+              "
+              onmouseover="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+              onmouseout="this.style.backgroundColor='#ffffff'; this.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.1)';"
+            >
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  color: #007bff;
+                  font-size: 18px;
+                  display: block;
+                "
+                >Food Item</a
+              >
+            </li>
+            <!-- Add more food businesses as needed -->
+          </ul>
+        </section>
+
+        <section
+          id="top-schools"
+          style="
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+            box-sizing: border-box;
+          "
+        >
+          <h2 style="font-size: 24px; color: #333333; margin-bottom: 15px">
+            Top Schools
+          </h2>
+          <ul
+            id="top-schools-list"
+            style="list-style-type: none; padding: 0; margin: 0"
+          >
+            <!-- Top schools will be dynamically added here -->
+            <li
+              style="
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin-bottom: 10px;
+                transition: background-color 0.3s, box-shadow 0.3s;
+              "
+              onmouseover="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+              onmouseout="this.style.backgroundColor='#ffffff'; this.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.1)';"
+            >
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  color: #007bff;
+                  font-size: 18px;
+                  display: block;
+                "
+                >School Item</a
+              >
+            </li>
+            <!-- Add more schools as needed -->
+          </ul>
+        </section>
+
+        <section
+          id="top-real-estate"
+          style="
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+            box-sizing: border-box;
+          "
+        >
+          <h2 style="font-size: 24px; color: #333333; margin-bottom: 15px">
+            Top Real Estate Agents
+          </h2>
+          <ul
+            id="top-real-estate-list"
+            style="list-style-type: none; padding: 0; margin: 0"
+          >
+            <!-- Top real estate agents will be dynamically added here -->
+            <li
+              style="
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin-bottom: 10px;
+                transition: background-color 0.3s, box-shadow 0.3s;
+              "
+              onmouseover="this.style.backgroundColor='#e0e0e0'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+              onmouseout="this.style.backgroundColor='#ffffff'; this.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.1)';"
+            >
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  color: #007bff;
+                  font-size: 18px;
+                  display: block;
+                "
+                >Real Estate Item</a
+              >
+            </li>
+            <!-- Add more real estate agents as needed -->
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 Business Information Application. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
